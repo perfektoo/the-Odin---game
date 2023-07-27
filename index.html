@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="header">
+        <h1>Rock Paper Scissors</h1>
+        <h3>The political game</h3>
+        <br />
+      </div>
+
+      <div class="rules">
+        <p style="color: red;">RULES:</p>
+        <p>Putin beats Shoigu</p>
+        <p>|</p>
+        <p>Shoigu beats Prigozhin</p>
+        <p>|</p>
+        <p>Prigozhin beats Putin</p>
+      </div>
+
+      <div class="game-menu">
+        <p style="font-weight: bold; font-size: 1.4rem;">GAME MENU</p>
+        <br />
+        <form action="">
+          <fieldset>
+            <legend style="font-weight: bold; color: green;">Chose your champion:</legend>
+
+            <div>
+              <input type="radio" id="putin" name="politics" value="Putin" />
+              <label for="putin">Putin</label>
+            </div>
+
+            <div>
+              <input type="radio" id="shoigu" name="politics" value="Shoigu" />
+              <label for="shoigu">Shoigu</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="prigozhin"
+                name="politics"
+                value="Prigozhin"
+              />
+              <label for="progozhin">Prigozhin</label>
+            </div>
+          </fieldset>
+        </form>
+        
+        <button class="confirm">Confirm</button>
+        <br />
+        <br />
+
+        <div class="stats">   
+        <p style="font-weight: bold;">Your score:</p>
+        <p style="display: inline" class="playerscore">0</p>
+        <br />
+        <p style="font-weight: bold;">Computer's score:</p>
+        <p style="display: inline" class="computerscore">0</p>
+        <br />
+        <p style="font-weight: bold;">Rounds left:</p>
+        <p style="display: inline" class="roundleft">5</p>
+        <br />
+        </div>
+        
+        <button class="play-again">Reset</button>
+
+
+      </div>
+
+      <div class="battle-field">
+        <p style="font-weight: bold;font-size: 1.4rem;">BATTLEFIELD</p>
+        <br />
+        <br />
+        <div class="choices">
+          <p style="color: green;font-weight: bold;">YOUR CHOICE</p>
+          <p style="color:orange;font-weight: bold">COMPUTER'S CHOICE</p>
+        </div>
+
+
+        <div class="clashing">
+          <img
+            src="/img/dove.jpeg"
+            alt="humanchoice"
+            class="playerpicture"
+          />
+          <p style="color:red; font-weight: bold; font-size: 2rem;">VS</p>
+          <img
+            src="/img/dove.jpeg"
+            alt="humanchoice"
+            class="computerpicture"
+          />
+        </div>
+        <br />
+
+        <div class="info"></div>
+      </div>
+      <div class="footer">
+        <p>
+          Made by
+          <a
+            href="https://github.com/perfektoo"
+            style="text-decoration: none; color: blue"
+            target="_blank">Perfektoo</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <div id="pop-up" class="pop-up" style="display:none;">
+      <div class="pop-up-body">
+        <div class="pop-up-content">
+          <p class="isOver" style="color: purple">5 rounds are over</p>
+          <br />
+          <p class="winning-info" style="color: red"></p>
+          <br />
+          <p class="your-score-info" style="color: green"></p>
+          <br />
+          <p class="computer-score-info" style="color: rgb(129, 129, 44)">
+            
+          </p>
+          <br />
+          <div class="pop-up-button">
+            <button class="play-again-button">Play again</button>
+            <button class="no-thanks-button">No, thanks!</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
