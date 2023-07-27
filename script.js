@@ -51,22 +51,22 @@ const selection = () => {
 //changing the photo for players
 function changePicture(name) {
   if (name === "Putin") {
-    playerPicture.src = "/img/Putin.jpg";
+    playerPicture.src = "img/Putin.jpg";
   } else if (name === "Shoigu") {
-    playerPicture.src = "/img/Shoigu.jpeg";
+    playerPicture.src = "img/Shoigu.jpeg";
   } else if (name === "Prigozhin") {
-    playerPicture.src = "/img/Prigozhin.jpeg";
+    playerPicture.src = "img/Prigozhin.jpeg";
   }
 }
 
 //changing the photo for computer
 function changeComputerPicture(name) {
   if (name === "Putin") {
-    computerPicture.src = "/img/Putin.jpg";
+    computerPicture.src = "img/Putin.jpg";
   } else if (name === "Shoigu") {
-    computerPicture.src = "/img/Shoigu.jpeg";
+    computerPicture.src = "img/Shoigu.jpeg";
   } else if (name === "Prigozhin") {
-    computerPicture.src = "/img/Prigozhin.jpeg";
+    computerPicture.src = "img/Prigozhin.jpeg";
   }
 }
 
@@ -238,8 +238,8 @@ resetButton.addEventListener("click", () => {
 
   roundLeft.removeChild(roundLeft.firstChild);
   roundLeft.append(yourRoundScore);
-  playerPicture.src = "/img/dove.jpeg";
-  computerPicture.src = "/img/dove.jpeg";
+  playerPicture.src = "img/dove.jpeg";
+  computerPicture.src = "img/dove.jpeg";
 
   let parent = document.querySelector(".info");
   parent.removeChild(parent.firstChild);
