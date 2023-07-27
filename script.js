@@ -210,6 +210,9 @@ playAgainButton.addEventListener("click", () => {
 
   roundLeft.removeChild(roundLeft.firstChild);
   roundLeft.append(yourRoundScore);
+
+  playerPicture.src = "img/dove.jpeg";
+  computerPicture.src = "img/dove.jpeg";
 });
 
 noThanksButton.addEventListener("click", () => {
